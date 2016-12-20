@@ -31,10 +31,14 @@ The interface is "sub" oriented, but the API is subject to changes.
 
 - data:
 
-    Data to be represented. It could be:
+    Data to be represented. This early version only accept data as a hashref with keys x, y and arrayrefs as the values:
 
-    - Perl data structure of the json expected by BokehJS: [http://plot.ly/javascript/reference/](http://plot.ly/javascript/reference/) (this data would be serialized to JSON)
-    - Anything that could be serialized to JSON with the json expected by BokehJS 
+    ```perl
+    { 
+      x => [1, 2, 3],
+      y => [1, 4, 9]
+    }
+    ```
 
 ## show\_plot
 

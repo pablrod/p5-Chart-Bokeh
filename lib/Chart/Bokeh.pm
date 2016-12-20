@@ -44,15 +44,12 @@ The interface is "sub" oriented, but the API is subject to changes.
 
 =item * data:
 
-Data to be represented. It could be:
+Data to be represented. This early version only accept data as a hashref with keys x, y and arrayrefs as the values:
 
-=over
-
-=item Perl data structure of the json expected by BokehJS: L<http://plot.ly/javascript/reference/> (this data would be serialized to JSON)
-
-=item Anything that could be serialized to JSON with the json expected by BokehJS 
-
-=back
+    { 
+      x => [1, 2, 3],
+      y => [1, 4, 9]
+    }
 
 =back
 
