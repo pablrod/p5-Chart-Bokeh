@@ -74,7 +74,7 @@ sub _render_html_wrap {
     my $html_begin = <<'HTML_BEGIN';
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.css"/>
 </head>
 <body>
