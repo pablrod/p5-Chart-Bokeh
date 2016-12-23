@@ -72,8 +72,9 @@ sub render_full_html {
 sub _render_html_wrap {
     my $body       = shift;
     my $html_begin = <<'HTML_BEGIN';
-<html>
+<!DOCTYPE html>
 <head>
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.css"/>
 </head>
 <body>
